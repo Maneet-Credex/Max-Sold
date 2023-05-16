@@ -1,0 +1,22 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+/* the slides */
+.slick-list {
+  margin: 0 80px !important;
+}
+.slick-slider .slick-slide {
+  padding: 0 15px !important;
+}
+.slick-next {
+  right: 40px !important;
+  background-color: black !important;
+}
+
+.slick-prev {
+  background-color: black !important;
+  left: 10px !important;
+}
