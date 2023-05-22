@@ -16,8 +16,10 @@ import {
 } from "@mui/material";
 import FacebookOutlinedIcon from "@mui/icons-material/FacebookOutlined";
 import SportsEsportsOutlinedIcon from "@mui/icons-material/SportsEsportsOutlined";
+import { useRouter } from "next/router";
 
 const Footer = () => {
+  const router = useRouter();
   return (
     <>
       <Container maxWidth={"xl"}>
@@ -72,7 +74,12 @@ const Footer = () => {
             >
               Auctions
             </Typography>
-            <Typography variant="overline" display="block" gutterBottom>
+            <Typography
+              variant="overline"
+              display="block"
+              gutterBottom
+              onClick={() => router.push("/trending")}
+            >
               Trending Auctions
             </Typography>
             <Typography variant="overline" display="block" gutterBottom>

@@ -51,7 +51,7 @@ const NavBar = () => {
             }}
           >
             {menuItems.map((item) => (
-              <MenuItem>
+              <MenuItem onClick={() => router.push(`/${item}`)}>
                 <Typography variant="body1" textAlign="center" fontSize={12}>
                   {item}
                 </Typography>
